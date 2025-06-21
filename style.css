@@ -1,0 +1,55 @@
+.title {
+    color: purple;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid purple;
+    border-radius: 15px;
+    background-color: lavender;
+    width: 70%;
+    height: auto;
+    margin: 30px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(128, 0, 128, 0.3);
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
+}
+
+.description {
+    color: purple;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    line-height: 1.6;
+    border: 1px solid lavender;
+    border-radius: 10px;
+    background-color: rgba(230, 230, 250, 0.3);
+    width: 80%;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 25px auto;
+    padding: 12px 24px;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.1);
+}
