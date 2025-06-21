@@ -16,6 +16,10 @@
     box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
 }
 
+.title:hover {
+    transform: scale(1.05);
+}
+
 .description {
     color: purple;
     font-size: 18px;
@@ -67,6 +71,7 @@
     background-color: rgba(230, 230, 250, 0.5);
     border-radius: 15px;
     transition: all 0.3s ease;
+    border-left: 4px solid purple;
 }
 
 .plugins:hover {
@@ -84,18 +89,138 @@
     padding-left: 20px;
 }
 
-.plugins .btn, .pm .btn {
+.plugins .btn,
+.pm .btn {
     background-color: #9932CC;
     border: 2px solid #800080;
     width: 150px;
     margin: 15px 0;
 }
 
-.plugins .btn:hover, .pm .btn:hover {
+.plugins .btn:hover,
+.pm .btn:hover {
     background-color: #800080;
     transform: scale(1.05);
 }
+
 ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+.projects {
+    text-align: left;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(230, 230, 250, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border-left: 4px solid purple;
+}
+
+.projects:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
+}
+
+.servers {
+    color: purple;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.plugins,
+.projects {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+}
+
+.about-me {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(230, 230, 250, 0.3);
+    border-radius: 15px;
+    border: 1px solid lavender;
+    max-width: 80%;
+}
+
+.section-title {
+    color: purple;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bio {
+    color: purple;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid purple;
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(128, 0, 128, 0.3);
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-me {
+        max-width: 90%;
+        padding: 15px;
+    }
 }
