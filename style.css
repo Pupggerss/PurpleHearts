@@ -53,3 +53,49 @@
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(128, 0, 128, 0.1);
 }
+
+.btn:hover {
+    background-color: #800080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(128, 0, 128, 0.3);
+}
+
+.plugins {
+    text-align: left;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(230, 230, 250, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.plugins:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
+}
+
+.pm {
+    color: purple;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.plugins .btn, .pm .btn {
+    background-color: #9932CC;
+    border: 2px solid #800080;
+    width: 150px;
+    margin: 15px 0;
+}
+
+.plugins .btn:hover, .pm .btn:hover {
+    background-color: #800080;
+    transform: scale(1.05);
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
