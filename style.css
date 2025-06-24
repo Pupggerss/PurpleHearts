@@ -140,7 +140,8 @@ ul {
 }
 
 .plugins,
-.projects {
+.projects,
+.studio {
     flex: 1;
     min-width: 300px;
 }
@@ -178,7 +179,6 @@ ul {
     padding: 0 10px;
 }
 
-
 .profile-container {
     display: flex;
     align-items: center;
@@ -207,6 +207,23 @@ ul {
     min-width: 250px;
 }
 
+.studio {
+    text-align: left;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(230, 230, 250, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border-left: 4px solid purple;
+    color: purple;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.studio:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.2);
+}
 
 @media (max-width: 600px) {
     .profile-container {
